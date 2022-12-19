@@ -1,16 +1,17 @@
 /* eslint-disable quote-props */
 /* eslint-disable require-jsdoc */
 import * as functions from "firebase-functions";
-import fetch from "node-fetch";
+import * as admin from "firebase-admin";
+
+import fetch from "node-fetch-commonjs";
 import btoa from "btoa";
 
-// The Firebase Admin SDK to access Firestore.
-import * as admin from "firebase-admin";
-// import admin = require("firebase-admin");
-// import initializeApp = require("firebase/app");
-// const getDatabase = require('firebase/firebase')
+// // The Firebase Admin SDK to access Firestore.
+// // import admin = require("firebase-admin");
+// // import initializeApp = require("firebase/app");
+// // const getDatabase = require('firebase/firebase')
 
-// import {getFirestore} from "firebase-admin/firestore";
+// // import {getFirestore} from "firebase-admin/firestore";
 
 admin.initializeApp();
 
